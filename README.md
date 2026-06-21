@@ -31,66 +31,7 @@ Flask
 Flask-CORS
 API REST
 JSON
-📂 Organização do Projeto
-FootballDraft/
-│
-├── frontend/
-│   │
-│   ├── public/
-│   │
-│   ├── src/
-│   │   │
-│   │   ├── assets/
-│   │   │   └── logo.png
-│   │   │
-│   │   ├── components/
-│   │   │   ├── Navbar.jsx
-│   │   │   ├── PlayerCard.jsx
-│   │   │   └── DraftCard.jsx
-│   │   │
-│   │   ├── pages/
-│   │   │   ├── Login.jsx
-│   │   │   ├── Cadastro.jsx
-│   │   │   ├── Home.jsx
-│   │   │   ├── Draft.jsx
-│   │   │   └── Historico.jsx
-│   │   │
-│   │   ├── services/
-│   │   │   └── api.js
-│   │   │
-│   │   ├── styles/
-│   │   │   ├── global.css
-│   │   │   ├── navbar.css
-│   │   │   ├── cards.css
-│   │   │   └── forms.css
-│   │   │
-│   │   ├── App.jsx
-│   │   └── main.jsx
-│   │
-│   ├── package.json
-│   └── vite.config.js
-│
-├── backend/
-│   │
-│   ├── data/
-│   │   ├── usuarios.json
-│   │   ├── jogadores.json
-│   │   └── draft.json
-│   │
-│   ├── routes/
-│   │   ├── auth.py
-│   │   ├── jogadores.py
-│   │   └── draft.py
-│   │
-│   ├── app.py
-│   ├── requirements.txt
-│   └── .env
-│
-├── docs/
-│   └── logo.png
-│
-├── README.md
-└── .gitignore
+
 🎯 Objetivo do Projeto
 
 O objetivo deste sistema é facilitar a administração de processos de recrutamento e seleção de atletas, permitindo que usuários realizem escolhas estratégicas com base nas informações dos jogadores cadastrados.
