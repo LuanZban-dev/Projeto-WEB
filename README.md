@@ -1,6 +1,6 @@
-⚽ Football Draft
+⚽ Football Draft
 
-Sistema web para gerenciamento e seleção de jogadores de futebol em formato Draft, desenvolvido para fins acadêmicos e prática de desenvolvimento Frontend.
+Sistema web para gerenciamento e seleção de jogadores de futebol em formato Draft, desenvolvido para fins acadêmicos e prática de desenvolvimento fullstack.
 
 
 
@@ -13,12 +13,13 @@ A aplicação foi construída utilizando tecnologias modernas para frontend e ba
 
 🚀 Principais Recursos
 👤 Cadastro e autenticação de usuários
-⚽ Listagem de jogadores disponíveis
+⚽ Listagem de jogadores disponíveis
 📊 Consulta de estatísticas dos atletas
 🏆 Sistema de Draft para seleção de jogadores
 🔄 Atualização e gerenciamento das escolhas
 📋 Histórico completo de seleções realizadas
 🔐 Controle de acesso e rotas protegidas
+📱 Layout adaptável para dispositivos móveis
 🛠️ Tecnologias Utilizadas
 Frontend
 React
