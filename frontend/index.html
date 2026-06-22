@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUT Draft List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="topbar">
+          <div>
+            <h1>FUT Draft List</h1>
+            <p>Busque jogadores, monte sua lista e acompanhe escolhas do draft.</p>
+          </div>
+        </div>
+
+        <form id="search-form" class="search">
+          <input id="search-name" type="search" placeholder="Nome do jogador" required />
+          <button type="submit">Buscar</button>
+        </form>
+
+        <div id="message" class="message" hidden></div>
+      </section>
+
+      <section class="layout">
+        <section class="panel">
+          <h2>Resultados</h2>
+          <div id="search-results" class="grid empty">Busque um jogador para ver resultados.</div>
+        </section>
+
+        <section class="panel">
+          <div class="section-header">
+            <h2>Escalação 4-3-3</h2>
+            <button id="refresh-draft" type="button">Atualizar</button>
+          </div>
+          <div id="draft-list" class="pitch empty">Nenhum jogador adicionado ao draft ainda.</div>
+        </section>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
