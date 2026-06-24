@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Football Draft Backend
 
 Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
