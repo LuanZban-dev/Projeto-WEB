@@ -1,3 +1,4 @@
+/* Tema global e configurações iniciais */
 :root {
   color-scheme: light;
   font-family:
@@ -8,12 +9,12 @@
 
 * {
   box-sizing: border-box;
-}
-
-body {
   margin: 0;
+  padding: 0;
 }
 
+
+/* Herdar fonte para todos os controles do formulário */
 button,
 input,
 select,
@@ -21,6 +22,7 @@ textarea {
   font: inherit;
 }
 
+/* Estilo padrão para botões clicáveis */
 button {
   border: 0;
   border-radius: 6px;
