@@ -213,20 +213,76 @@ p {
   }
 }
 
-:root{font-family:'Rajdhani',sans-serif;background:#0f1720;color:#fff}
-body{background:linear-gradient(180deg,#09121b,#102334)}
-.panel{background:#152636;border-color:#2b4459}
-.player-card{background:linear-gradient(135deg,#2c2110,#574115);border:1px solid #d4af37;color:white}
-.pitch{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin-top:14px}
-.ovr{font-size:32px;font-weight:700;color:#ffd700}
-#team-overall{font-size:22px;font-weight:700;color:#ffd700}
+:root{
+  font-family:'Rajdhani',sans-serif;
+  background:#0f1720;
+  color:#fff
+}
 
-.football-pitch{position:relative;height:750px;margin-top:15px;border-radius:16px;background:repeating-linear-gradient(0deg,#1e7b35,#1e7b35 40px,#21863a 40px,#21863a 80px);overflow:hidden}
-.football-pitch::before{content:"";position:absolute;inset:10px;border:2px solid rgba(255,255,255,.5)}
-.position-card{position:absolute;width:120px;transform:translateX(-50%)}
-.mini-card{background:#152636;border:1px solid #d4af37;border-radius:10px;padding:8px;text-align:center}
-.mini-card img{width:60px;height:60px;object-fit:cover;border-radius:50%}
+body{
+  background:linear-gradient(180deg,#09121b,#102334)
+}
+.panel{
+  background:#152636;
+  border-color:#2b4459
+}
+.player-card{
+  background:linear-gradient(135deg,#2c2110,#574115);
+  border:1px solid #d4af37;
+  color:white}
 
+.pitch{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;margin-top:14px
+}
+.ovr{
+  font-size:32px;
+  font-weight:700;
+  color:#ffd700
+}
+#team-overall{
+  font-size:22px;
+  font-weight:700;
+  color:#ffd700
+}
+
+.football-pitch{
+  position:relative;
+  height:750px;
+  margin-top:15px;
+  border-radius:16px;
+  background:repeating-linear-gradient(0deg,#1e7b35,#1e7b35 40px,#21863a 40px,#21863a 80px);overflow:hidden
+
+}
+
+.football-pitch::before{
+  content:"";
+  position:absolute;
+  inset:10px;border:2px solid rgba(255,255,255,.5)
+
+}
+
+.position-card{
+  position:absolute;
+  width:120px;
+  transform:translateX(-50%)
+}
+
+.mini-card{
+  background:#152636;
+  border:1px solid #d4af37;
+  border-radius:10px;padding:8px;
+  text-align:center
+}
+
+.mini-card img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:50%
+
+}
 
 .remove-player{
   position:absolute;
