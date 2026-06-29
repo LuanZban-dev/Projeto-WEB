@@ -1,0 +1,45 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String @id @default(uuid())
+  username     String @unique
+  email        String @unique
+  passwordHash String
+
+  draftPlayers DraftPlayer[]
+}
+
+model DraftPlayer {
+  id         String  @id @default(uuid())
+  externalId String? 
+
+  name        String
+  team        String?
+  nationality String?
+  position    String?
+  birthDate   String?
+  imageUrl    String?
+
+  slot      String?
+  formation String?
+
+  status     String  @default("WATCHLIST")
+  draftRound Int?
+  draftPick  Int?
+  notes      String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, externalId])
+}

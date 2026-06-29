@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FUT Draft List</title>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <div class="topbar">
+          <div>
+            <h1>FUT Draft List</h1>
+            <p>Busque jogadores, monte sua lista e acompanhe escolhas do draft.</p>
+          </div>
+        </div>
+
+        <form id="search-form" class="search">
+          <input id="search-name" type="search" placeholder="Nome do jogador" required />
+          <button type="submit">Buscar</button>
+        </form>
+
+        <div id="message" class="message" hidden></div>
+      </section>
+
+      <section class="layout">
+        <section class="panel">
+          <h2>Resultados</h2>
+          <div id="search-results" class="grid empty">Busque um jogador para ver resultados.</div>
+        </section>
+
+        <section class="panel">
+          <div class="section-header">
+            <div>
+              <label for="formation-select">Escalação</label>
+              <select id="formation-select">
+                <option value="4-4-2">4-4-2</option>
+                <option value="4-2-2-2">4-2-2-2</option>
+                <option value="4-3-3" selected>4-3-3</option>
+                <option value="4-2-3-1">4-2-3-1</option>
+                <option value="3-4-3">3-4-3</option>
+              </select>
+            </div>
+
+            <button id="clear-draft" type="button">Limpar</button>
+          </div>
+
+          <div id="draft-list" class="pitch empty">
+            Nenhum jogador adicionado ao draft ainda.
+          </div>
+        </section>
+
+      <button id="logout-button">Sair</button>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.prisma/
+coverage/
+
+*.log
+*.sqlite
+*.db
+
+.vscode/
+.idea/
+
+prisma/dev.db
+prisma/*.db

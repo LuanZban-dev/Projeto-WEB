@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FUT Draft - Cadastro</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+<main class="login-page">
+
+    <section class="panel login-panel">
+
+        <h1>FUT Draft List</h1>
+
+        <p>
+            Crie sua conta para começar a montar suas escalações.
+        </p>
+
+        <form id="register-form">
+
+            <div class="form-group">
+                <label for="name">Nome</label>
+                <input
+                    id="name"
+                    type="text"
+                    placeholder="Digite seu nome"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="username">Usuário</label>
+                <input
+                    id="username"
+                    type="text"
+                    placeholder="Escolha um usuário"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input
+                    id="email"
+                    type="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="password">Senha</label>
+                <input
+                    id="password"
+                    type="password"
+                    placeholder="Crie uma senha"
+                    required
+                >
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword">Confirmar senha</label>
+                <input
+                    id="confirmPassword"
+                    type="password"
+                    placeholder="Digite novamente a senha"
+                    required
+                >
+            </div>
+
+            <button type="submit">
+                Criar Conta
+            </button>
+
+        </form>
+
+        <div class="login-links">
+            <span>Já possui uma conta?</span>
+            <a href="./login.html">Entrar</a>
+        </div>
+
+    </section>
+
+</main>
+
+</body>
+    <script src="./register.js"></script>
+</html>

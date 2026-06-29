@@ -1,0 +1,425 @@
+/* Tema global e configurações iniciais */
+:root {
+  color-scheme: light;
+  font-family:
+    Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #eef2f6;
+  color: #16202a;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Herdar fonte para todos os controles do formulário */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+/* Estilo padrão para botões clicáveis */
+button {
+  border: 0;
+  border-radius: 6px;
+  background: #1d6f5f;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px 14px;
+}
+
+button.secondary {
+  background: #d7e2ea;
+  color: #1b2a38;
+}
+
+button.danger {
+  background: #b83333;
+}
+
+input,
+select,
+textarea {
+  border: 1px solid #c7d3de;
+  border-radius: 6px;
+  color: #17212b;
+  padding: 10px;
+  width: 100%;
+}
+
+textarea {
+  min-height: 76px;
+  resize: vertical;
+}
+
+.app {
+  margin: 0 auto;
+  max-width: 1180px;
+  padding: 24px;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #dce5ec;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.topbar,
+.section-header,
+.actions {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+p {
+  color: #5a6875;
+  margin-top: 6px;
+}
+
+.badge {
+  background: #edf7f3;
+  border: 1px solid #b9dbd0;
+  border-radius: 999px;
+  color: #1d6f5f;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 8px 10px;
+  white-space: nowrap;
+}
+
+.search {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: minmax(180px, 1fr) auto;
+  margin-top: 20px;
+}
+
+.layout {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  gap: 12px;
+  margin-top: 14px;
+}
+
+.empty {
+  color: #657382;
+}
+
+.message {
+  background: #fff8df;
+  border: 1px solid #ead789;
+  border-radius: 6px;
+  margin-top: 14px;
+  padding: 10px;
+}
+
+.player-card {
+  border: 1px solid #dce5ec;
+  border-radius: 8px;
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 84px 1fr;
+  padding: 12px;
+}
+
+.avatar {
+  align-items: center;
+  background: #d7e2ea;
+  border-radius: 6px;
+  display: flex;
+  height: 84px;
+  justify-content: center;
+  overflow: hidden;
+  width: 84px;
+}
+
+.avatar img {
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.avatar span {
+  color: #5d6b78;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+.player-card h3 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.meta {
+  color: #5d6b78;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.form-grid {
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 10px;
+}
+
+.full {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 860px) {
+  .layout,
+  .search {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar,
+  .section-header,
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .player-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+:root{
+  font-family:'Rajdhani',sans-serif;
+  background:#0f1720;
+  color:#f13535
+}
+
+body{
+  background:linear-gradient(180deg,#09121b,#102334)
+}
+.panel{
+  background:#152636;
+  border-color:#2b4459
+}
+.player-card{
+  background:linear-gradient(135deg,#2c2110,#574115);
+  border:1px solid #d4af37;
+  color:white}
+
+.pitch{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;margin-top:14px
+}
+.ovr{
+  font-size:32px;
+  font-weight:700;
+  color:#ffd700
+}
+#team-overall{
+  font-size:22px;
+  font-weight:700;
+  color:#ffd700
+}
+
+.football-pitch{
+    margin-top:15px;
+    padding:20px;
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+    grid-template-rows:repeat(7,90px);
+
+    gap:15px;
+
+    background:
+        repeating-linear-gradient(
+            0deg,
+            #1e7b35,
+            #1e7b35 40px,
+            #21863a 40px,
+            #21863a 80px
+        );
+
+    border-radius:16px;
+    border:2px solid rgba(255,255,255,.3);
+}
+
+.position-card{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.mini-card{
+  background:#152636;
+  border:1px solid #d4af37;
+  border-radius:10px;padding:8px;
+  text-align:center
+}
+
+.mini-card img{
+  width:60px;
+  height:60px;
+  object-fit:cover;
+  border-radius:50%
+
+}
+
+.remove-player{
+  position:absolute;
+  top:4px;
+  right:4px;
+  width:24px;
+  height:24px;
+  padding:0;
+  border-radius:50%;
+  background:#b83333;
+  color:white;
+  font-weight:bold;
+}
+
+.mini-card{
+  position:relative;
+}
+
+/* ================= LOGIN ================= */
+
+.login-page{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+
+}
+
+.login-panel{
+
+    width:100%;
+    max-width:420px;
+
+    text-align:center;
+
+}
+
+.login-panel h1{
+
+    font-size:42px;
+
+    margin-bottom:10px;
+
+}
+
+.login-panel p{
+
+    margin-bottom:30px;
+
+    color:#cfd8e3;
+
+}
+
+#login-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    text-align:left;
+
+    gap:8px;
+
+}
+
+.form-group label{
+
+    font-weight:700;
+
+    color:#fff;
+
+}
+
+.form-group input{
+
+    background:#1d3447;
+
+    border:1px solid #d4af37;
+
+    color:white;
+
+    border-radius:8px;
+
+    padding:12px;
+
+}
+
+.form-group input::placeholder{
+
+    color:#8fa3b7;
+
+}
+
+#login-form button{
+
+    margin-top:10px;
+
+    padding:14px;
+
+    font-size:18px;
+
+    background:#1d6f5f;
+
+    border:1px solid #d4af37;
+
+    transition:.2s;
+
+}
+
+#login-form button:hover{
+
+    transform:translateY(-2px);
+
+    background:#23856f;
+
+}
