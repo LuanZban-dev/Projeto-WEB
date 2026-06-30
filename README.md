@@ -140,6 +140,6 @@ JSON
 O objetivo deste sistema é facilitar a administração de processos de recrutamento e seleção de atletas, permitindo que usuários realizem escolhas estratégicas com base nas informações dos jogadores cadastrados.
 
 👨‍💻 Equipe de Desenvolvimento
-Luan Bela Santos Caetano (nº matricula)
+Luan Bela Santos Caetano (nº 2024001105)
 João Pedro Silva de Oliveira (nº 2024005140)
 >>>>>>> 48e360dbc1b40ed82cf11d24581ccf89973abf54
