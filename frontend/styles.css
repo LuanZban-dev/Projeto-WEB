@@ -13,6 +13,39 @@
   padding: 0;
 }
 
+.info-box{
+    display:flex;
+    align-items:flex-start;
+    gap:10px;
+
+    margin:12px 0 18px;
+
+    padding:10px 14px;
+
+    background:#12344c;
+
+    border-left:4px solid #29b6f6;
+
+    border-radius:8px;
+
+    color:#f13535;
+
+    font-size:13px;
+
+    line-height:1.5;
+}
+
+.info-icon{
+    font-size:18px;
+    color:#f13535;
+    font-weight:bold;
+}
+
+.info-box p{
+    margin:0;
+    color:#f13535;
+    font-size: 16px;
+}
 
 /* Herdar fonte para todos os controles do formulário */
 button,
@@ -36,7 +69,7 @@ button {
 button.secondary {
   background: #d7e2ea;
   color: #1b2a38;
-}
+} 
 
 button.danger {
   background: #b83333;
