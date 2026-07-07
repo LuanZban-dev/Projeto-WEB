@@ -7,9 +7,10 @@ Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
 
 - Express
 - Prisma
-- SQLite
+- JWT
 - TypeScript
-- Axios
+  Frontend
+-  HTML/CSS/JS
 
 ## Instalacao
 
@@ -32,7 +33,7 @@ PORT=3333
 npm run dev
 ```
 
-Depois abra `frontend/index.html` no navegador para usar a interface.
+Depois abra `frontend/login.html` no navegador para usar a interface.
 
 ## Prisma Studio
 
