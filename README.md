@@ -1,5 +1,5 @@
 
-# Football Draft Backend
+# Football Draft #
 
 Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
 
@@ -7,10 +7,10 @@ Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
 
 - Express
 - Prisma
-- SQLite
 - TypeScript
-- Axios
-
+- JWT 
+- HTML/CSS/JS
+- 
 ## Instalacao
 
 ```bash
@@ -32,7 +32,7 @@ PORT=3333
 npm run dev
 ```
 
-Depois abra `frontend/index.html` no navegador para usar a interface.
+Depois abra `frontend/login.html` no navegador para usar a interface.
 
 ## Prisma Studio
 
@@ -114,32 +114,23 @@ O Football Draft é uma plataforma que permite organizar processos de seleção 
 
 A aplicação foi construída utilizando tecnologias modernas para frontend e backend, garantindo uma experiência intuitiva e dinâmica.
 
-🚀 Principais Recursos
-👤 Cadastro e autenticação de usuários
-⚽ Listagem de jogadores disponíveis
-📊 Consulta de estatísticas dos atletas
-🏆 Sistema de Draft para seleção de jogadores
-🔄 Atualização e gerenciamento das escolhas
-📋 Histórico completo de seleções realizadas
-🔐 Controle de acesso e rotas protegidas
-📱 Layout adaptável para dispositivos móveis
-🛠️ Tecnologias Utilizadas
-Frontend
-React
-Vite
-JavaScript
-CSS
-Backend
-Flask
-Flask-CORS
-API REST
-JSON
+-🚀 Principais Recursos
+-👤 Cadastro e autenticação de usuários
+-⚽ Listagem de jogadores disponíveis
+-📊 Consulta de estatísticas dos atletas
+-🏆 Sistema de Draft para seleção de jogadores
+-🔄 Atualização e gerenciamento das escolhas
+-📋 Histórico completo de seleções realizadas
+-🔐 Controle de acesso e rotas protegidas
+-📱 Layout adaptável para dispositivos móveis
+-🛠️ Tecnologias Utilizadas
+-Frontend
+-HTML/CSS/JS
 
-🎯 Objetivo do Projeto
-
-O objetivo deste sistema é facilitar a administração de processos de recrutamento e seleção de atletas, permitindo que usuários realizem escolhas estratégicas com base nas informações dos jogadores cadastrados.
+-🎯 Objetivo do Projeto
+-O objetivo deste sistema é cria suas seleções com seus jogadores favoritos, fazendo seu time ideal.
 
 👨‍💻 Equipe de Desenvolvimento
 Luan Bela Santos Caetano (nº 2024001105)
 João Pedro Silva de Oliveira (nº 2024005140)
->>>>>>> 48e360dbc1b40ed82cf11d24581ccf89973abf54
+
