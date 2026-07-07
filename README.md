@@ -9,8 +9,7 @@ Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
 - Prisma
 - JWT
 - TypeScript
-  Frontend
--  HTML/CSS/JS
+-   Frontend-> HTML/CSS/JS
 
 ## Instalacao
 
