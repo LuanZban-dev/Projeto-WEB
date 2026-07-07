@@ -1,59 +1,178 @@
+# ⚽ Football Draft
 
-# Football Draft #
+Sistema web para gerenciamento de um **Draft de Futebol**, desenvolvido para fins acadêmicos, permitindo pesquisar jogadores, montar um time ideal e gerenciar seleções de atletas.
 
-Sistema minimo de backend com CRUD para um draft de jogadores de futebol.
+---
 
-## Tecnologias
+# 📖 Sobre o Projeto
 
-- Express
-- Prisma
-- TypeScript
-- JWT 
-- HTML/CSS/JS
-- 
-## Instalacao
+O **Football Draft** é uma aplicação Full Stack que simula um sistema de Draft semelhante ao utilizado em ligas esportivas. A plataforma permite que usuários pesquisem jogadores, adicionem atletas ao seu draft, organizem a escalação em campo e gerenciem suas escolhas.
+
+O projeto foi desenvolvido utilizando **Node.js**, **Express**, **Prisma**, **SQLite** e **HTML/CSS/JavaScript**, aplicando conceitos de autenticação, API REST, CRUD e integração com uma API externa.
+
+---
+
+# 🚀 Funcionalidades
+
+* 🔐 Cadastro e autenticação de usuários (JWT)
+* 🔍 Pesquisa de jogadores através da API TheSportsDB
+* ⚽ Adição de jogadores ao Draft
+* 📋 Listagem de jogadores selecionados
+* ✏️ Atualização das informações dos jogadores
+* ❌ Remoção de jogadores do Draft
+* 🏟️ Campo tático para organização da equipe
+* 🔒 Rotas protegidas por autenticação
+* 📱 Interface responsiva
+
+---
+
+# 🛠️ Tecnologias Utilizadas
+
+## Backend
+
+* Node.js
+* Express
+* TypeScript
+* Prisma ORM
+* SQLite
+* JWT (JSON Web Token)
+
+## Frontend
+
+* HTML5
+* CSS3
+* JavaScript
+
+## API Externa
+
+* TheSportsDB
+
+---
+
+# 📂 Estrutura do Projeto
+
+```text
+Projeto-WEB/
+
+├── frontend/
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   ├── script.js
+│   ├── login.js
+│   ├── register.js
+│   └── styles.css
+│
+├── prisma/
+│   └── schema.prisma
+│
+├── src/
+│   ├── controller/
+│   ├── middlewares/
+│   ├── routes/
+│   ├── services/
+│   ├── app.ts
+│   └── server.ts
+│
+├── package.json
+├── tsconfig.json
+└── README.md
+```
+
+---
+
+# ⚙️ Instalação
+
+Clone o repositório:
 
 ```bash
-npm i
+git clone https://github.com/LuanZban-dev/Projeto-WEB.git
+```
+
+Entre na pasta do projeto:
+
+```bash
+cd Projeto-WEB
+```
+
+Instale as dependências:
+
+```bash
+npm install
+```
+
+Gere o Prisma Client:
+
+```bash
 npx prisma generate
+```
+
+Crie o banco de dados:
+
+```bash
 npx prisma db push
 ```
 
-Crie o arquivo `.env` na raiz do projeto:
+---
+
+# 🔧 Configuração
+
+Crie um arquivo **.env** na raiz do projeto.
 
 ```env
 DATABASE_URL="file:./app.db"
 PORT=3333
+
+JWT_SECRET=sua_chave_secreta
 ```
 
-## Rodar o projeto
+---
+
+# ▶️ Executando o Projeto
+
+Inicie o servidor:
 
 ```bash
 npm run dev
 ```
 
-Depois abra `frontend/login.html` no navegador para usar a interface.
+Após iniciar o backend, abra no navegador:
 
-## Prisma Studio
+```text
+frontend/login.html
+```
+
+---
+
+# 🗄️ Prisma Studio
+
+Para visualizar o banco de dados:
 
 ```bash
 npx prisma studio
 ```
 
-## Rotas
+---
 
-### Buscar jogadores na TheSportsDB
+# 🌐 Rotas da API
+
+## Buscar jogadores
 
 ```http
 GET /players/search?name=Messi
 ```
 
-### Criar jogador no draft
+---
+
+## Criar jogador no Draft
 
 ```http
 POST /draft
-Content-Type: application/json
+```
 
+Exemplo:
+
+```json
 {
   "externalId": "34146370",
   "name": "Lionel Messi",
@@ -69,24 +188,33 @@ Content-Type: application/json
 }
 ```
 
-### Listar draft
+---
+
+## Listar jogadores
 
 ```http
 GET /draft
 ```
 
-### Detalhar jogador
+---
+
+## Buscar jogador por ID
 
 ```http
 GET /draft/:id
 ```
 
-### Atualizar jogador
+---
+
+## Atualizar jogador
 
 ```http
 PUT /draft/:id
-Content-Type: application/json
+```
 
+Exemplo:
+
+```json
 {
   "status": "DRAFTED",
   "draftRound": 1,
@@ -95,42 +223,34 @@ Content-Type: application/json
 }
 ```
 
-### Remover jogador
+---
+
+## Remover jogador
 
 ```http
 DELETE /draft/:id
 ```
-=======
-⚽ Football Draft
 
-Sistema web para gerenciamento e seleção de jogadores de futebol em formato Draft, desenvolvido para fins acadêmicos e prática de desenvolvimento fullstack.
+---
 
+# 🔐 Fluxo de Autenticação
 
+1. O usuário realiza login.
+2. O backend valida as credenciais.
+3. Um **JWT** é gerado.
+4. O token é armazenado pelo cliente.
+5. As próximas requisições enviam o token no cabeçalho **Authorization**.
+6. O backend valida o token antes de permitir o acesso às rotas protegidas.
 
+---
 
-📖 Visão Geral
+# 🎯 Objetivo
 
-O Football Draft é uma plataforma que permite organizar processos de seleção de atletas, simulando o sistema de Draft utilizado em ligas esportivas. Os usuários podem visualizar jogadores disponíveis, realizar escolhas e acompanhar o histórico de seleções.
+O Football Draft foi desenvolvido para praticar conceitos de desenvolvimento Full Stack, consumo de APIs, autenticação com JWT, banco de dados utilizando Prisma e organização de aplicações em arquitetura cliente-servidor.
 
-A aplicação foi construída utilizando tecnologias modernas para frontend e backend, garantindo uma experiência intuitiva e dinâmica.
+---
 
--🚀 Principais Recursos
--👤 Cadastro e autenticação de usuários
--⚽ Listagem de jogadores disponíveis
--📊 Consulta de estatísticas dos atletas
--🏆 Sistema de Draft para seleção de jogadores
--🔄 Atualização e gerenciamento das escolhas
--📋 Histórico completo de seleções realizadas
--🔐 Controle de acesso e rotas protegidas
--📱 Layout adaptável para dispositivos móveis
--🛠️ Tecnologias Utilizadas
--Frontend
--HTML/CSS/JS
+# 👨‍💻 Equipe de Desenvolvimento
 
--🎯 Objetivo do Projeto
--O objetivo deste sistema é cria suas seleções com seus jogadores favoritos, fazendo seu time ideal.
-
-👨‍💻 Equipe de Desenvolvimento
-Luan Bela Santos Caetano (nº 2024001105)
-João Pedro Silva de Oliveira (nº 2024005140)
-
+* **Luan Bela Santos Caetano** — RA: 2024001105
+* **João Pedro Silva de Oliveira** — RA: 2024005140
