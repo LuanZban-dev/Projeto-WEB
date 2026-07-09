@@ -123,7 +123,7 @@ Crie um arquivo **.env** na raiz do projeto.
 DATABASE_URL="file:./app.db"
 PORT=3333
 
-JWT_SECRET=sua_chave_secreta
+JWT_SECRET="larissa linda"
 ```
 
 ---
